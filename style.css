@@ -1,0 +1,797 @@
+/* HTML */
+
+
+/*Write HTML code to design a web as per given specification. Divide the browser screen into two frames. The first frame will display the heading. Divide the second frame into two columns. The frame on the left should be name of cities consisting of hyperlinks.
+Clicking on any one of these hyperlinks will display related information in right hand side frame as shown below
+*/
+
+
+/*
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IT Companies in India</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #container {
+            display: flex;
+            border: 1px solid #000000;
+        }
+        
+        #heading-frame {
+            flex: 1;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        
+        #content-frame {
+            flex: 2;
+            display: flex;
+        }
+        
+        #city-column {
+            flex: 1;
+            background-color: #f8f8f8;
+            padding: 10px;
+            border: 1px solid #000000;
+        }
+        
+        #info-column {
+            flex: 1;
+            background-color: #f8f8f8;
+            padding: 10px;
+            border: 1px solid #000000;
+        }
+        
+        #city-column ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        #city-column ul li {
+            margin-bottom: 5px;
+        }
+        
+        #city-column ul li a {
+            text-decoration: none;
+            color: #000000;
+        }
+        
+        #city-column ul li a:hover {
+            color: #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="heading-frame">
+        <h1>IT Companies in India</h1>
+    </div>
+    <br>
+    <div id="container">
+        <div id="content-frame">
+            <div id="city-column">
+                <ul>
+                    <li><a href="#" onclick="displayInfo('Pune')">Pune</a></li>
+                    <li><a href="#" onclick="displayInfo('Mumbai')">Mumbai</a></li>
+                    <li><a href="#" onclick="displayInfo('Banglore')">Banglore</a></li>
+                </ul>
+            </div>
+            <div id="info-column">
+                <p id="info">Click on a city to display related information here.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function displayInfo(city) {
+            var info =
+                document.getElementById("info");
+            switch (city) {
+                case 'Pune':
+                    info.innerHTML = "<strong>City:</strong> Pune<br><br><strong>IT Companies:</strong><br>-Infosys <br> -Persistent ";
+                    break;
+                case 'Mumbai':
+                    info.innerHTML = "<strong>City:</strong> Mumbai<br><br><strong>IT Companies:</strong><br>-TCS <br> -Reliance0 ";
+                    break;
+                case 'Banglore':
+                    info.innerHTML = "<strong>City:</strong> Banglore<br><br><strong>IT Companies:</strong><br>-Company 3 <br> -Company 4 ";
+                    break;
+                default:
+                    info.innerHTML = "Click on a city to display related informationhere.";
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+*/
+
+
+/*Q) Write HTML code to design a website for Online Shopping. 
+Design home page which consist of list of items each with hyperlink, clicking on which should display 
+related information on separate web page. (Use external CSS to format each web page) Design
+Aadhar card registration form and apply all the necessary validations on it. 
+*/
+
+
+/* file1.html:  */
+
+
+/* <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online Shopping</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1>Welcome to Online Shopping</h1>
+    <ul>
+        <li><a href="2.2.html">Product 1</a></li>
+        <li><a href="2.3.html">Product 2</a></li>
+        <li><a href="2.4.html">Product 3</a></li>
+    </ul>
+</body>
+
+</html> */
+
+
+/* file2.html */
+
+
+/* <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product 1 - Online Shopping</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1>Product 1</h1>
+    <p>This is the description of Product 1.</p>
+    <p>Price: $19.99</p>
+    <a href="2.1.html">Go back to Home</a>
+</body>
+
+</html> */
+
+
+/* file3.html */
+
+
+/* <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product 2 - Online Shopping</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1>Product 2</h1>
+    <p>This is the description of Product 2.</p>
+    <p>Price: $29.99</p>
+    <a href="2.1.html">Go back to Home</a>
+</body>
+
+</html> */
+
+
+/* file4.html */
+
+
+/* <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product 3 - Online Shopping</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1>Product 3</h1>
+    <p>This is the description of Product 3.</p>
+    <p>Price: $39.99</p>
+    <a href="2.1.html">Go back to Home</a>
+</body>
+
+</html> */
+
+
+/* file5Style.css */
+
+
+/* body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-styletype: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+a:hover {
+    text-decoration: underline;
+} */
+
+
+/* 3.	Design Aadhar card registration form and apply all the necessary validations on it. */
+
+
+/* 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aadhar Card Registration Form</title>
+</head>
+
+<body>
+    <h1>Aadhar Card Registration Form</h1>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="aadhar_number">Aadhar Number:</label>
+        <input type="text" id="aadhar_number" name="aadhar_number" pattern="[0-9]{12}" title="Aadhar number should be 12 digits" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other" required>
+        <label for="other">Other</label><br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea><br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" title="Mobile number should be 10 digits" required><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+
+</html> */
+
+
+/* 
+Write a program to display star shape on webpage using svg tag  */
+
+
+/* <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Star Shape</title>
+</head>
+
+<body>
+    <svg width="200" height="200">
+<polygon points="100,10 40,198 190,78 10,78 160,198" style="fill: red; stroke: black; stroke-width:
+2;"></polygon>
+</svg>
+</body>
+
+</html> */
+
+
+/* Write a program to display Audio and Video file on webpage */
+
+
+/* <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Audio and Video Demo</title>
+</head>
+
+<body>
+    <h2>Audio Example</h2>
+    <audio controls>
+<source src="song.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+    <h2>Video Example</h2>
+    <video controls width="400" height="300">
+<source src="v.mp4" type="video/mp4">
+Your browser does not support the video element.
+</video>
+</body>
+
+</html> */
+
+
+/* PHP */
+
+
+/* 1.	Write Program to demonstrate the use of variables using mathematical calculator. */
+
+
+/* <!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <form method="post" action="">
+        <label>Enter First Number:</label>
+        <input type="number" name="num1" required><br><br>
+        
+        <label>Enter Second Number:</label>
+        <input type="number" name="num2" required><br><br>
+        
+        <input type="submit" name="calculate" value="Calculate">
+    </form>
+    
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["calculate"])) {
+        $num1 = $_POST["num1"];
+        $num2 = $_POST["num2"];
+        
+        $addition = $num1 + $num2;
+        $subtraction = $num1 - $num2;
+        $multiplication = $num1 * $num2;
+        $division = $num2 != 0 ? $num1 / $num2 : "Error: Division by zero is not allowed.";
+        
+        echo "<h2>Addition: $num1 + $num2 = $addition</h2>";
+        echo "<h2>Subtraction: $num1 - $num2 = $subtraction</h2>";
+        echo "<h2>Multiplication: $num1 * $num2 = $multiplication</h2>";
+        echo "<h2>Division: $num1 / $num2 = $division</h2>";
+    }
+    ?>
+</body>
+</html> */
+
+
+/* 
+2.	Create Registration page and display all form content entered by end user on a separate webpage using PHP. 
+(use most of the different HTML form controls and different types of variable in PHP). */
+
+
+/* file1.php */
+
+
+/* <!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form method="post" action="2.2.php">
+        <label>Name:</label>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Age:</label>
+        <input type="number" name="age" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male" required>Male
+        <input type="radio" name="gender" value="female" required>Female<br><br>
+
+        <label>Favorite Color:</label>
+        <select name="color" required>
+            <option value="">Select Color</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select><br><br>
+
+        <label>Languages known:</label>
+        <input type="checkbox" name="languages[]" value="english">English
+        <input type="checkbox" name="languages[]" value="spanish">Spanish
+        <input type="checkbox" name="languages[]" value="french">French<br><br>
+
+        <label>About Yourself:</label>
+        <textarea name="about" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" name="submit" value="Submit">
+    </form>
+</body>
+</html> */
+
+
+/* file2.php */
+
+
+/* <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Display Data</title>
+</head>
+
+<body>
+    <h1>Displaying User Data</h1>
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = $_POST["name"];
+        $email = $_POST["email"];
+        $age = $_POST["age"];
+        $gender = $_POST["gender"];
+        $color = $_POST["color"];
+        $languages = isset($_POST["languages"]) ? implode(", ", $_POST["languages"]) : "";
+        $about = $_POST["about"];
+
+        echo "<p><strong>Name:</strong> $name</p>";
+        echo "<p><strong>Email:</strong> $email</p>";
+        echo "<p><strong>Age:</strong> $age</p>";
+        echo "<p><strong>Gender:</strong> $gender</p>";
+        echo "<p><strong>Favorite Color:</strong> $color</p>";
+        echo "<p><strong>Languages Known:</strong> $languages</p>";
+        echo "<p><strong>About Yourself:</strong><br>$about</p>";
+    }
+    ?>
+</body>
+
+</html> */
+
+
+/* 3.	Create a PHP page for Registration page with MySQL connection. */
+
+
+/* 
+<?php
+// Database connection details
+$host = "localhost";        // e.g., localhost or a remote server
+$username = "root";    // Database username
+$password1 = "";    // Database password
+$database = "college";    // Database name
+
+// Initialize variables for user data
+$name = $email = $password = "";
+
+// Process the form when it is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get user input from the registration form
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+
+
+    // Create a database connection
+    $conn = mysqli_connect($host, $username, $password1, $database);
+
+    // Check connection
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+
+    // SQL query to insert the user data into the database
+    $sql = "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$password')";
+
+    if (mysqli_query($conn, $sql)) {
+        echo "<h1>Registration Successful!</h1>";
+        echo "<p>Thank you, $name, for registering.</p>";
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+
+    // Close the database connection
+    mysqli_close($conn);
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+        <label>Name:</label>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" required><br><br>
+
+        <input type="submit" name="submit" value="Register">
+    </form>
+</body>
+</html>
+ */
+
+
+/* 4.	Create a PHP page for login page with MySQL connection. */
+
+
+/* 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+</head>
+<body>
+    <?php
+    // Database connection details
+    $host = "localhost";        // e.g., localhost or a remote server
+    $username = "root";    // Database username
+    $password = "";    // Database password
+    $database = "college";    // Database name
+
+    $message = '';
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Create a database connection
+        $conn = mysqli_connect($host, $username, $password, $database);
+
+        // Check connection
+        if (!$conn) {
+            die("Connection failed: " . mysqli_connect_error());
+        }
+
+        // Get user input from the login form
+        $email = $_POST["email"];
+        $password = $_POST["password"];
+
+    
+       
+
+        // SQL query to check if the user exists in the database
+        $sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
+
+        $result = mysqli_query($conn, $sql);
+
+        if (mysqli_num_rows($result) > 0) {
+            $message = "Login Successful! Welcome back, $email.";
+        } else {
+            $message = "Login Failed. Invalid email or password. Please try again.";
+        }
+
+        // Close the database connection
+        mysqli_close($conn);
+    }
+    ?>
+
+    <h1>Login Form</h1>
+    <?php echo "<p>$message</p>"; ?>
+    <form method="post" action="">
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" required><br><br>
+
+        <input type="submit" name="submit" value="Login">
+    </form>
+</body>
+</html>
+ */
+
+
+/* 5.	Write a PHP program to Read from existing file and write to another file. */
+
+
+/* 
+<?php
+// Input and output file paths
+$inputFile = 'input.txt';
+$outputFile = 'output.txt';
+
+// Read content from the input file
+$content = file_get_contents($inputFile);
+
+// Write content to the output file
+file_put_contents($outputFile, $content);
+
+echo "Content from $inputFile has been written to $outputFile.";
+?> */
+
+
+/* ANG */
+
+
+/* 1.	Write an AngularJS script to print details of bank 
+(bank name, MICR code, IFC code, address etc.) in tabular form using ng-repeat.  */
+
+
+/* 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bank Details</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="myController">
+    <h1>Bank Details</h1>
+    <table border="1px black solid">
+        <thead>
+            <tr>
+                <th>Bank Name</th>
+                <th>MICR Code</th>
+                <th>IFSC Code</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="bank in banks">
+                <td>{{ bank.name }}</td>
+                <td>{{ bank.micr }}</td>
+                <td>{{ bank.ifsc }}</td>
+                <td>{{ bank.address }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        // Define the AngularJS app
+        var app = angular.module('myApp', []);
+
+        // Define the AngularJS controller
+        app.controller('myController', function($scope) {
+            // Sample bank details (you can fetch this data from an API or database)
+            $scope.banks = [{
+                    name: 'Bank of Example',
+                    micr: '123456789',
+                    ifsc: 'BANK001234',
+                    address: '123, Street Example, City'
+                }, {
+                    name: 'Test Bank',
+                    micr: '987654321',
+                    ifsc: 'TEST09876',
+                    address: '456, Sample Road, Town'
+                },
+                // Add more bank details as needed
+            ];
+        });
+    </script>
+</body>
+
+</html> */
+
+
+/* 									
+2.	Write an AngularJS script for addition of two numbers 
+using ng-init, ng-model & ng-bind. And also Demonstrate ng-show, ng-disabled, ng-click 
+directives on button component. */
+
+
+/* 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Addition of Two Numbers</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp" ng-init="num1=0; num2=0; result=0" ng-controller="myController">
+    <h1>Addition of Two Numbers</h1>
+    <div>
+        <label for="num1">Number 1:</label>
+        <input type="number" ng-model="num1">
+    </div>
+    <div>
+        <label for="num2">Number 2:</label>
+        <input type="number" ng-model="num2">
+    </div>
+    <div>
+        <button ng-click="addNumbers()" ng-disabled="num1 === 0 && num2 === 0">Add</button>
+    </div>
+    <div ng-show="result !== 0">
+        <strong>Result:</strong> <span ng-bind="result"></span>
+    </div>
+
+    <script>
+        // Define the AngularJS app
+        var app = angular.module('myApp', []);
+
+        // Define the AngularJS controller
+        app.controller('myController', function($scope) {
+            $scope.addNumbers = function() {
+                $scope.result = $scope.num1 + $scope.num2;
+            };
+        });
+    </script>
+</body>
+
+</html> */
+
+
+/* NODE */
+
+
+/* 3.	Create a Node.js file that Insert Multiple Records in "student" table, 
+and display the result object on console.  */
+
+
+/* 
+var mysql = require('mysql');
+
+var con = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "college"
+});
+
+con.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected!");
+    var sql = "INSERT INTO users (name, email,password) VALUES ?";
+    var values = [
+        ['vedika', 'Highway 71', 'vee'],
+        ['kandekar', 'Lowstreet 4', 'vrr'],
+        ['shruti', 'Dawning st 652', 'vhh'],
+        ['reshma', 'Mountain 21', 'vjj'],
+        ['kk', 'Valley 345', 'hgh']
+    ];
+    con.query(sql, [values], function(err, result) {
+        if (err) throw err;
+        console.log("Number of records inserted: " + result.affectedRows);
+        console.log(result);
+    });
+}); */
+
+
+/* 4.	Create a Node.js application that uses user defined module to find area of rectangle and 
+display details on console.  */
+
+
+/* 
+// Function to calculate the area of a rectangle
+function calculateArea(length, width) {
+    return length * width;
+}
+
+// Function to display rectangle details on the console
+function displayDetails(length, width) {
+    const area = calculateArea(length, width);
+    console.log('Rectangle Details:');
+    console.log('------------------');
+    console.log('Length:', length);
+    console.log('Width:', width);
+    console.log('Area:', area);
+}
+
+
+
+// Export the functions to make them accessible from other files
+module.exports = {
+    calculateArea,
+    displayDetails,
+};
+
+const rectangle = require('./4node.js');
+
+rectangle.displayDetails(10, 18); */
